@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=6, minimum-scale=1.0" >
+  <meta name="description" content="Register application">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Register</title>
+  <meta name="theme-color" value="#5FAAE5">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="/src/css/app.css">
+</head>
+<body>
+
+
+  <!-- navbar -->
+  <div class="topnav" id="myTopnav">
+    <a href="/index.html" >Home</a>
+    <a href="/register.html" class="active">Register</a>
+    <a href="/login.html">Login</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+  <!-- navbar end -->
+
+  <!-- form -->
+  <div class="row">
+    <div class="col-lg-4 col-md-4 col-sm-4"></div>
+
+    <div class="col-lg-4 col-md-4 col-sm-4">
+      <form action="welcome_screen.html" method="POST">
+        <h1 class="login-title">Registration</h1>
+        <input type="text" id="username" class="login-input" name="username" placeholder="Username" required />
+        <input type="email" id="email" class="login-input" name="email" placeholder="Email Adress" required>
+        <input type="password" id="pass" class="login-input" name="password" placeholder="Password" required>
+        <input type="text" id="phone" class="login-input" name="contact_number" placeholder="mobileno" required>
+        <input type="submit" name="submit" onclick="send_data()" value="Register" class="login-button">
+      </form>
+    </div>
+
+    <div class="col-lg-4 col-md-4 col-sm-4"></div>
+  </div>
+  <!-- form end -->
+
+  <!-- script -->
+  <script src="/src/js/app.js"></script>
+
+  <script type="module" src="/src/js/script.js"></script>
+
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } 
+      else {
+        x.className = "topnav";
+      }
+    }
+  </script>
+   
+
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=6, minimum-scale=1.0" >
+  <meta name="description" content="Register application">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" value="#5FAAE5">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="/src/css/app.css">
+  <title>Login</title>
+</head>
+<body>
+
+  <!-- navbar -->
+  <div class="topnav" id="myTopnav">
+    <a href="/index.html" >Home</a>
+    <a href="/register.html" class="active">Register</a>
+    <a href="/login.html">Login</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+  <!-- navbar end -->
+    
+
+  <!-- form -->
+  <div class="row">
+    <div class="col-lg-4 col-md-4 col-sm-4"></div>
+
+    <div class="col-lg-4 col-md-4 col-sm-4">
+      <form class="form" action="" method="post">
+      <h1 class="login-title">Login</h1>
+      <input type="text" class="login-input" name="contact_number" placeholder="Enter Mobile Number" >
+
+      <input type="submit" name="sendotp" value="Send OTP" class="login-button">
+
+      <input type="text" class="login-input" style="margin-top:30px;" name="totp" placeholder="Enter OTP" >
+
+      <input type="submit" name="otp" value="Verify" class="login-button">
+      </form>
+    </div>
+
+    <div class="col-lg-4 col-md-4 col-sm-4"></div>
+  </div>
+  <!-- form end -->
+
+  <!-- script tag  -->
+  <script>
+    const accountSid = 'ACfe71b0e28dbb9e144637c7cbfa699304';
+    const authToken = '672faef18304caa8dce10cc0f16ff9fe';
+    const client = require('twilio')(accountSid, authToken);
+
+    client.messages
+    .create({
+      body: 'This is the ship that made the Kessel Run in fourteen parsecs?',
+      from: '+12058517392',
+      to: '+918168972763'
+    })
+    .then(message => console.log(message.sid));
+  </script>
+
+
+</body>
+</html>

@@ -1,0 +1,130 @@
+body, html {
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+  height: 100%;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #1f2079;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+.card {
+  border: 1px solid #ccc;
+  box-shadow: 1px 1px 1px #ccc;
+  width: 80%;
+  max-width: 800px;
+  margin: auto;
+  margin-top: 40px;
+  cursor: pointer;
+}
+
+.card__image img {
+  max-width: 100%;
+}
+
+.card__content, .card__details {
+  padding: 0 5%;
+  transition: opacity 0.3s ease-out;
+}
+
+.card__details {
+  display: none;
+  opacity: 0;
+}
+
+.form {
+  margin: 50px auto;
+  width: 300px;
+  padding: 30px 25px;
+  background: white;
+}
+h1.login-title {
+  color: #666;
+  margin: 0px auto 25px;
+  font-size: 25px;
+  font-weight: 300;
+  text-align: center;
+}
+.login-input {
+  font-size: 15px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 25px;
+  height: 25px;
+  width: calc(100% - 23px);
+}
+.login-input:focus {
+  border-color:#6e8095;
+  outline: none;
+}
+.login-button {
+  color: #fff;
+  background: #55a1ff;
+  border: 0;
+  outline: 0;
+  width: 100%;
+  height: 50px;
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer;
+}
+.link {
+  color: #666;
+  font-size: 15px;
+  text-align: center;
+  margin-bottom: 0px;
+}
+.link a {
+  color: #666;
+}
+h3 {
+  font-weight: normal;
+  text-align: center;
+}

@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Login & Signup application">
+  <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=6, minimum-scale=1.0" >
+  <meta name="description" content="Register application">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" value="#5FAAE5">
+  <title>Home page</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="/src/css/app.css">
+  <link rel="manifest" href="/manifest.json">
+</head>
+<body>
+
+
+  <!-- navbar -->
+  <div class="topnav" id="myTopnav">
+    <a href="/index.html" class="active">Home</a>
+    <a href="/register.html">Register</a>
+    <a href="/login.html">Login</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+ <!-- navbar end -->
+
+  <script src="/src/js/app.js"></script>
+
+  <script>function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+  </script>
+</body>
+</html>
